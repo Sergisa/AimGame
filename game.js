@@ -5,6 +5,7 @@ const timeList = document.querySelector('#time-list')
 const timeEl = document.querySelector('#time');
 let time = 0;
 let score = 0;
+const colorList = ["cyan", "red", "blue", "violet"]
 
 startBtn.addEventListener('click', function (event) {
     event.preventDefault();
@@ -59,17 +60,13 @@ function createRandomCircle() {
     const x = getRandomNumber(0, width - size)
     const y = getRandomNumber(0, height - size)
     circle.classList.add('circle');
+    //TODO: Установка случайного цвета кружка
+    circle.classList.add(colorList[getRandomNumber(0, colorList.length - 1)])
     circle.style.width = `${size}px`
     circle.style.height = `${size}px`
     circle.style.top = `${y}px`
     circle.style.left = `${x}px`
     board.append(circle);
-
-    //TODO: Установка случайного цвета кружка
-    /*
-    Цвет случаен на числовом уровне?
-    или случайно берём цвет из списка заготовок цветов?
-    */
 }
 
 function getRandomNumber(min, max) {

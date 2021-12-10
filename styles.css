@@ -95,8 +95,23 @@ h1 {
 }
 
 .circle {
-    background: linear-gradient(90deg, #16D9E3 0%, #30C7EC 47%, #46AEF7 100%);
     position: absolute;
     border-radius: 50%;
     cursor: pointer;
+}
+
+.cyan {
+    background: linear-gradient(90deg, #16D9E3 0%, #30C7EC 47%, #46AEF7 100%);
+}
+
+.red {
+    background: linear-gradient(90deg, #e31627 0%, #ed2f3f 47%, #f74554 100%);
+}
+
+.blue {
+    background: linear-gradient(90deg, #1d16e3 0%, #362fed 47%, #4b45f7 100%);
+}
+
+.violet {
+    background: linear-gradient(90deg, #9816e3 0%, #a82fed 47%, #b645f7 100%);
 }
